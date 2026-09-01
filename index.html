@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐍 SNAKE GAME</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">SCORE</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">LEVEL</span>
+                    <span class="value" id="level">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="joystick-container">
+            <div class="joystick">
+                <div class="joystick-bg">
+                    <div class="joystick-stick" id="joystickStick"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="startBtn" class="btn btn-start">START</button>
+            <button id="pauseBtn" class="btn btn-pause">PAUSE</button>
+            <button id="resetBtn" class="btn btn-reset">RESET</button>
+        </div>
+
+        <div class="game-over" id="gameOver">
+            <div class="game-over-content">
+                <h2>GAME OVER</h2>
+                <p id="finalScore">Score: 0</p>
+                <button id="restartBtn" class="btn btn-start">MAIN LAGI</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
